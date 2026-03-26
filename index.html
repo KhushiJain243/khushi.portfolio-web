@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Khushi Jain</h1>
+    <p>Aspiring Web Developer</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+    <h2>My Hobby: Reading</h2>
+    <p>I enjoy reading books because it improves my knowledge and creativity.</p>
+
+    <ol id="hobbyList">
+        <li>Improves vocabulary <button onclick="deleteItem(this)">Delete</button></li>
+        <li>Reduces stress <button onclick="deleteItem(this)">Delete</button></li>
+        <li>Increases knowledge <button onclick="deleteItem(this)">Delete</button></li>
+    </ol>
+
+    <!-- Input -->
+    <input type="text" id="hobbyInput" placeholder="Add new point">
+    <button onclick="addItem()">Add</button>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a student learning HTML and CSS. I enjoy building simple and creative websites.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>Simple HTML webpage.</p>
+    </div>
+
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>Basic CSS styled website.</p>
+    </div>
+
+    <div class="project">
+        <h3>Project 3</h3>
+        <p>Responsive layout design.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="showAlert(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p id="dateTime"></p>
+    <p>
+        <a href="https://www.linkedin.com/">LinkedIn</a> |
+        <a href="https://github.com/">GitHub</a>
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
